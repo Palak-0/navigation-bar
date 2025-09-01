@@ -3,100 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar Website</title>
-    <style>
-        /* Reset default margin & padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        /* Navbar Styling */
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 15px 50px;
-        }
-
-        .navbar .logo {
-            color: white;
-            font-size: 22px;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        .navbar ul li {
-            display: inline;
-        }
-
-        .navbar ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-
-        .navbar ul li a:hover {
-            color: #ff9800;
-        }
-
-        /* Responsive Menu for small screens */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .navbar ul {
-                flex-direction: column;
-                gap: 10px;
-                margin-top: 10px;
-            }
-        }
-
-        /* Page Content */
-        .content {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .content h1 {
-            font-size: 36px;
-            color: #333;
-        }
-    </style>
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="#" class="logo">MyWebsite</a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <div class="top-bar">
+            <div class="logo">PAPERMAG</div>
+            <div class="social-icons">
+                <a href="#">F</a>
+                <a href="#">T</a>
+                <a href="#">I</a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CATALOG</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button type="submit">🔍</button>
+            </div>
+        </div>
     </nav>
-
-    <!-- Page Content -->
-    <div class="content">
-        <h1>Welcome to My Website</h1>
-        <p>Explore the navigation bar above!</p>
-    </div>
 
 </body>
 </html>
